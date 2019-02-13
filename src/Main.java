@@ -2,7 +2,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        linkedList();
+        stack();
     }
 
     private static void dynamicArray(){
@@ -45,5 +45,18 @@ public class Main {
 
         linkedList.remove(1);
         linkedList.print();
+    }
+
+    private static void stack(){
+        Stack stack = new Stack();
+        System.out.println("stack isEmpty: "+stack.isEmpty());
+        stack.push(0);
+        stack.push(1);
+        stack.push(2);
+        System.out.println("stack isEmpty: "+stack.isEmpty());
+        System.out.println("stack pop: "+stack.pop());
+        stack.print();
+        System.out.println("stack top: "+stack.top());
+        stack.print();
     }
 }
