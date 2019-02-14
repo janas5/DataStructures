@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Stack {
-    private ArrayList<Integer> list = new ArrayList<>();
+    private ArrayList<Integer> list = new ArrayList();
 
     public boolean isEmpty(){
         return list.isEmpty();

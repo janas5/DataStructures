@@ -2,7 +2,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        stack();
+        queue();
     }
 
     private static void dynamicArray(){
@@ -58,5 +58,30 @@ public class Main {
         stack.print();
         System.out.println("stack top: "+stack.top());
         stack.print();
+    }
+
+    private static void queue(){
+        Queue queue = new Queue();
+        queue.print();
+        queue.enqueue(0);
+        queue.enqueue(1);
+        queue.enqueue(2);
+        queue.enqueue(3);
+        queue.print();
+        System.out.println("dequeue: "+queue.dequeue());
+        queue.print();
+        System.out.println("dequeue: "+queue.dequeue());
+        System.out.println("dequeue: "+queue.dequeue());
+        queue.print();
+        queue.enqueue(21);
+        queue.enqueue(22);
+        queue.enqueue(23);
+        System.out.println("dequeue: "+queue.dequeue());
+        System.out.println("dequeue: "+queue.dequeue());
+        System.out.println("front: "+queue.front());
+        System.out.println("dequeue: "+queue.dequeue());
+        System.out.println("dequeue: "+queue.dequeue());
+        queue.print();
+        System.out.println("dequeue: "+queue.dequeue());
     }
 }
